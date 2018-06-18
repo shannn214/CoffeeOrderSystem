@@ -10,6 +10,9 @@ import UIKit
 
 class OrderPageTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var coffeeImage: UIView!
+    @IBOutlet weak var coffeeTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

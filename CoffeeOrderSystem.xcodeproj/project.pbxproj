@@ -22,6 +22,10 @@
 		09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */; };
 		09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */; };
 		09D1347120D75B0F00806CAA /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */; };
+		09D1347320D7610D00806CAA /* MainTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1347220D7610D00806CAA /* MainTopView.swift */; };
+		09D1347520D7673200806CAA /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347420D7673100806CAA /* GoogleService-Info-2.plist */; };
+		09D1347920D7696600806CAA /* CoffeeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347820D7696600806CAA /* CoffeeJSON.json */; };
+		4E03ED43B68B950D5509C4C3 /* Pods_CoffeeOrderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,12 @@
 		09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPageTableViewCell.xib; sourceTree = "<group>"; };
 		09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
+		09D1347220D7610D00806CAA /* MainTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopView.swift; sourceTree = "<group>"; };
+		09D1347420D7673100806CAA /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = SOURCE_ROOT; };
+		09D1347820D7696600806CAA /* CoffeeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeeJSON.json; sourceTree = "<group>"; };
+		AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrderSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E57587B1A31704D60A8BD8 /* Pods-CoffeeOrderSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		F838958DBB6BD89C56A17F17 /* Pods-CoffeeOrderSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E03ED43B68B950D5509C4C3 /* Pods_CoffeeOrderSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +71,8 @@
 			children = (
 				09D1343E20D7523F00806CAA /* CoffeeOrderSystem */,
 				09D1343D20D7523F00806CAA /* Products */,
+				49A1B2E9B7C07FF7CCCEBBA8 /* Pods */,
+				85A8DC761CD37CBBCA406518 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +94,7 @@
 				09D1343F20D7523F00806CAA /* AppDelegate.swift */,
 				09D1344620D7524300806CAA /* Assets.xcassets */,
 				09D1344820D7524300806CAA /* LaunchScreen.storyboard */,
+				09D1347420D7673100806CAA /* GoogleService-Info-2.plist */,
 				09D1344B20D7524300806CAA /* Info.plist */,
 			);
 			path = CoffeeOrderSystem;
@@ -89,6 +103,7 @@
 		09D1345120D754A700806CAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				09D1347820D7696600806CAA /* CoffeeJSON.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +167,7 @@
 				09D1346D20D75AF400806CAA /* OrderListCell */,
 				09D1346C20D75ADE00806CAA /* OrderPageCell */,
 				09D1346620D75A2800806CAA /* MainTableView.swift */,
+				09D1347220D7610D00806CAA /* MainTopView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -174,6 +190,23 @@
 			path = OrderListCell;
 			sourceTree = "<group>";
 		};
+		49A1B2E9B7C07FF7CCCEBBA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9E57587B1A31704D60A8BD8 /* Pods-CoffeeOrderSystem.debug.xcconfig */,
+				F838958DBB6BD89C56A17F17 /* Pods-CoffeeOrderSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85A8DC761CD37CBBCA406518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09D1344E20D7524300806CAA /* Build configuration list for PBXNativeTarget "CoffeeOrderSystem" */;
 			buildPhases = (
+				2CB78216CB97F1052D5792BD /* [CP] Check Pods Manifest.lock */,
 				09D1343820D7523F00806CAA /* Sources */,
 				09D1343920D7523F00806CAA /* Frameworks */,
 				09D1343A20D7523F00806CAA /* Resources */,
+				431C38CFE3F1AB5E729EBA32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,9 +269,11 @@
 			files = (
 				09D1344A20D7524300806CAA /* LaunchScreen.storyboard in Resources */,
 				09D1344720D7524300806CAA /* Assets.xcassets in Resources */,
+				09D1347520D7673200806CAA /* GoogleService-Info-2.plist in Resources */,
 				09D1344520D7523F00806CAA /* Main.storyboard in Resources */,
 				09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */,
 				09D1346020D7559500806CAA /* OrderList.storyboard in Resources */,
+				09D1347920D7696600806CAA /* CoffeeJSON.json in Resources */,
 				09D1347120D75B0F00806CAA /* OrderListTableViewCell.xib in Resources */,
 				09D1346220D755A100806CAA /* OrderDetail.storyboard in Resources */,
 			);
@@ -244,11 +281,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CB78216CB97F1052D5792BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoffeeOrderSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		431C38CFE3F1AB5E729EBA32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09D1343820D7523F00806CAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D1347320D7610D00806CAA /* MainTopView.swift in Sources */,
 				09D1346A20D75AD700806CAA /* OrderPageTableViewCell.swift in Sources */,
 				09D1346720D75A2800806CAA /* MainTableView.swift in Sources */,
 				09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */,
@@ -398,6 +477,7 @@
 		};
 		09D1344F20D7524300806CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E57587B1A31704D60A8BD8 /* Pods-CoffeeOrderSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,7 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Shannn.CoffeeOrderSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shannn.CoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,6 +496,7 @@
 		};
 		09D1345020D7524300806CAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F838958DBB6BD89C56A17F17 /* Pods-CoffeeOrderSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -425,7 +506,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Shannn.CoffeeOrderSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Shannn.CoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
