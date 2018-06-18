@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MainTableViewController: UIViewController {
 
     @IBOutlet weak var mainTableView: UITableView!
+    
+    var selectedIndex: IndexPath?
+
+    var selectedItem = [Items]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +44,7 @@ class MainTableViewController: UIViewController {
 extension MainTableViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return selectedItem.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,7 +52,8 @@ extension MainTableViewController: UITableViewDelegate, UITableViewDataSource {
         guard let orderCell = mainTableView.dequeueReusableCell(withIdentifier: String(describing: OrderPageTableViewCell.self),
                                                                 for: indexPath) as? OrderPageTableViewCell else { return UITableViewCell() }
         
-        
+        orderCell.coffeeTitle.text = selectedItem[indexPath.row].name
+        orderCell.coffeeImage.sd_setImage(with: URL(string: selectedItem[indexPath.row].image))
         
         return orderCell
     }

@@ -9,9 +9,15 @@
 import UIKit
 import SDWebImage
 
+protocol TopViewDelegate: class {
+    func sendTopViewData(_ controller: MainTopViewController, selectedItem: Items?)
+}
+
 class MainTopViewController: UIViewController {
 
     @IBOutlet weak var topCollectionView: UICollectionView!
+    
+    weak var topViewDelegate: TopViewDelegate?
     
     var item = LoadItems()
     
@@ -27,6 +33,7 @@ class MainTopViewController: UIViewController {
         item.delegate = self
         
         item.loadItemData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,7 +83,7 @@ extension MainTopViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        
+        self.topViewDelegate?.sendTopViewData(self, selectedItem: itemData[indexPath.row])
         
     }
     

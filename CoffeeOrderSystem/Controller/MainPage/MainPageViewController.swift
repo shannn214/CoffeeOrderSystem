@@ -12,9 +12,18 @@ import SDWebImage
 class MainPageViewController: UIViewController {
 
 //    @IBOutlet weak var topView: TopView!
+    @IBOutlet weak var orderContainer: UIView!
+    
+    var topViewIndex: IndexPath?
+    
+    var mainTableVC: MainTableViewController?
+    
+    var mainTopVC: MainTopViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
     }
     
@@ -25,8 +34,26 @@ class MainPageViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let mainTableVC = segue.destination as? MainTableViewController {
+            self.mainTableVC = mainTableVC
+        } else if let mainTopVC = segue.destination as? MainTopViewController {
+            self.mainTopVC = mainTopVC
+            self.mainTopVC?.topViewDelegate = self
+        }
+    }
 
 }
 
+extension MainPageViewController: TopViewDelegate {
+    
+    func sendTopViewData(_ controller: MainTopViewController, selectedItem: Items?) {
+//        self.topViewIndex = index
+//        mainTableVC?.selectedIndex = index
+        mainTableVC?.selectedItem.append(selectedItem!)
+        mainTableVC?.mainTableView.reloadData()
 
+    }
+    
+}
