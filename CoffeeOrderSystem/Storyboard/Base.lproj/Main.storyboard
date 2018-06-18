@@ -35,11 +35,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-4m-jI4" customClass="MainTopView" customModule="CoffeeOrderSystem" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="160"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-4m-jI4" customClass="TopView" customModule="CoffeeOrderSystem" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="195"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="T8c-EY-lOh"/>
+                                    <constraint firstAttribute="height" constant="195" id="T8c-EY-lOh"/>
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imw-dc-eGt">
@@ -53,7 +53,7 @@
                                 </items>
                             </toolbar>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucY-K8-3Gj">
-                                <rect key="frame" x="0.0" y="224" width="375" height="399"/>
+                                <rect key="frame" x="0.0" y="259" width="375" height="364"/>
                                 <connections>
                                     <segue destination="XsU-Gp-UbF" kind="embed" id="zSv-ob-M1X"/>
                                 </connections>
@@ -87,11 +87,11 @@
             <objects>
                 <viewController id="XsU-Gp-UbF" customClass="MainTableViewController" customModule="CoffeeOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jdg-B1-FE2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="399"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ffe-7J-2bW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="399"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -102,6 +102,7 @@
                             <constraint firstAttribute="trailing" secondItem="Ffe-7J-2bW" secondAttribute="trailing" id="Roh-cX-y8S"/>
                             <constraint firstItem="Ffe-7J-2bW" firstAttribute="top" secondItem="jdg-B1-FE2" secondAttribute="topMargin" id="thq-Tn-Gt9"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="9EH-1P-f4V"/>
                     </view>
                     <connections>
                         <outlet property="mainTableView" destination="Ffe-7J-2bW" id="HrZ-5O-nRQ"/>

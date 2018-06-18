@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopView" customModule="CoffeeOrderSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="imageEight" destination="pq6-Rd-ub5" id="B4B-sK-CYh"/>
+                <outlet property="imageFive" destination="yPJ-0V-APP" id="Afh-jf-eHc"/>
+                <outlet property="imageFour" destination="dMG-cL-TjW" id="6VL-9I-EhB"/>
+                <outlet property="imageOne" destination="9YZ-jV-n4N" id="wLS-rs-jlJ"/>
+                <outlet property="imageSeven" destination="PRM-pA-Sxv" id="Gd9-O2-xzE"/>
+                <outlet property="imageSix" destination="SAN-8M-dRv" id="z7Q-Ty-Sc9"/>
+                <outlet property="imageThree" destination="J2o-Lc-nns" id="lkR-IG-VPa"/>
+                <outlet property="imageTwo" destination="bLd-Z9-XsK" id="Gba-kt-8wx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="195"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jyx-UC-GUi">
+                    <rect key="frame" x="10" y="10" width="357" height="82.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9YZ-jV-n4N">
+                            <rect key="frame" x="0.0" y="0.0" width="82" height="82.5"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bLd-Z9-XsK">
+                            <rect key="frame" x="92" y="0.0" width="81.5" height="82.5"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J2o-Lc-nns">
+                            <rect key="frame" x="183.5" y="0.0" width="82" height="82.5"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-cL-TjW">
+                            <rect key="frame" x="275.5" y="0.0" width="81.5" height="82.5"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dMG-cL-TjW" secondAttribute="height" multiplier="1:1" id="rvW-Sd-1i6"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pbn-0p-dBu">
+                    <rect key="frame" x="10" y="102.5" width="357" height="81.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yPJ-0V-APP">
+                            <rect key="frame" x="0.0" y="0.0" width="82" height="81.5"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SAN-8M-dRv">
+                            <rect key="frame" x="92" y="0.0" width="81.5" height="81.5"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRM-pA-Sxv">
+                            <rect key="frame" x="183.5" y="0.0" width="82" height="81.5"/>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pq6-Rd-ub5">
+                            <rect key="frame" x="275.5" y="0.0" width="81.5" height="81.5"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pq6-Rd-ub5" secondAttribute="height" multiplier="1:1" id="2F1-54-6jA"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pbn-0p-dBu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="AFc-gJ-048"/>
+                <constraint firstItem="jyx-UC-GUi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Hxb-nj-P6l"/>
+                <constraint firstItem="Pbn-0p-dBu" firstAttribute="top" secondItem="jyx-UC-GUi" secondAttribute="bottom" constant="10" id="Kmm-AN-6to"/>
+                <constraint firstItem="jyx-UC-GUi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="LjT-qb-XUB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Pbn-0p-dBu" secondAttribute="trailing" constant="10" id="bNf-Vi-eRy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jyx-UC-GUi" secondAttribute="trailing" constant="10" id="hnn-9P-yLq"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-137.5" y="70.5"/>
+        </view>
+    </objects>
+</document>

@@ -22,9 +22,10 @@
 		09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */; };
 		09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */; };
 		09D1347120D75B0F00806CAA /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */; };
-		09D1347320D7610D00806CAA /* MainTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1347220D7610D00806CAA /* MainTopView.swift */; };
 		09D1347520D7673200806CAA /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347420D7673100806CAA /* GoogleService-Info-2.plist */; };
 		09D1347920D7696600806CAA /* CoffeeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347820D7696600806CAA /* CoffeeJSON.json */; };
+		09D1347B20D7700600806CAA /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1347A20D7700600806CAA /* TopView.swift */; };
+		09D1347D20D7702F00806CAA /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347C20D7702F00806CAA /* TopView.xib */; };
 		4E03ED43B68B950D5509C4C3 /* Pods_CoffeeOrderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,9 +47,10 @@
 		09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPageTableViewCell.xib; sourceTree = "<group>"; };
 		09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
-		09D1347220D7610D00806CAA /* MainTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopView.swift; sourceTree = "<group>"; };
 		09D1347420D7673100806CAA /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = SOURCE_ROOT; };
 		09D1347820D7696600806CAA /* CoffeeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeeJSON.json; sourceTree = "<group>"; };
+		09D1347A20D7700600806CAA /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		09D1347C20D7702F00806CAA /* TopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
 		AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrderSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E57587B1A31704D60A8BD8 /* Pods-CoffeeOrderSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.debug.xcconfig"; sourceTree = "<group>"; };
 		F838958DBB6BD89C56A17F17 /* Pods-CoffeeOrderSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		09D1345220D754B000806CAA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09D1347F20D7705D00806CAA /* ListPage */,
 				09D1346520D759FE00806CAA /* MainPage */,
 			);
 			path = View;
@@ -164,10 +167,9 @@
 		09D1346520D759FE00806CAA /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				09D1346D20D75AF400806CAA /* OrderListCell */,
+				09D1347E20D7703E00806CAA /* TopView */,
 				09D1346C20D75ADE00806CAA /* OrderPageCell */,
 				09D1346620D75A2800806CAA /* MainTableView.swift */,
-				09D1347220D7610D00806CAA /* MainTopView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -188,6 +190,23 @@
 				09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */,
 			);
 			path = OrderListCell;
+			sourceTree = "<group>";
+		};
+		09D1347E20D7703E00806CAA /* TopView */ = {
+			isa = PBXGroup;
+			children = (
+				09D1347A20D7700600806CAA /* TopView.swift */,
+				09D1347C20D7702F00806CAA /* TopView.xib */,
+			);
+			path = TopView;
+			sourceTree = "<group>";
+		};
+		09D1347F20D7705D00806CAA /* ListPage */ = {
+			isa = PBXGroup;
+			children = (
+				09D1346D20D75AF400806CAA /* OrderListCell */,
+			);
+			path = ListPage;
 			sourceTree = "<group>";
 		};
 		49A1B2E9B7C07FF7CCCEBBA8 /* Pods */ = {
@@ -273,6 +292,7 @@
 				09D1344520D7523F00806CAA /* Main.storyboard in Resources */,
 				09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */,
 				09D1346020D7559500806CAA /* OrderList.storyboard in Resources */,
+				09D1347D20D7702F00806CAA /* TopView.xib in Resources */,
 				09D1347920D7696600806CAA /* CoffeeJSON.json in Resources */,
 				09D1347120D75B0F00806CAA /* OrderListTableViewCell.xib in Resources */,
 				09D1346220D755A100806CAA /* OrderDetail.storyboard in Resources */,
@@ -327,12 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D1347320D7610D00806CAA /* MainTopView.swift in Sources */,
 				09D1346A20D75AD700806CAA /* OrderPageTableViewCell.swift in Sources */,
 				09D1346720D75A2800806CAA /* MainTableView.swift in Sources */,
 				09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */,
 				09D1345620D754F900806CAA /* MainPageViewController.swift in Sources */,
 				09D1345E20D7555C00806CAA /* OrderDetailPageViewController.swift in Sources */,
+				09D1347B20D7700600806CAA /* TopView.swift in Sources */,
 				09D1345B20D7554100806CAA /* OrderListPageViewController.swift in Sources */,
 				09D1346420D759F800806CAA /* MainTableViewController.swift in Sources */,
 				09D1344020D7523F00806CAA /* AppDelegate.swift in Sources */,
