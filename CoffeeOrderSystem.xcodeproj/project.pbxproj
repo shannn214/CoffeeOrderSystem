@@ -22,10 +22,10 @@
 		09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */; };
 		09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */; };
 		09D1347120D75B0F00806CAA /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */; };
-		09D1347520D7673200806CAA /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347420D7673100806CAA /* GoogleService-Info-2.plist */; };
 		09D1347920D7696600806CAA /* CoffeeJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347820D7696600806CAA /* CoffeeJSON.json */; };
 		09D1347B20D7700600806CAA /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1347A20D7700600806CAA /* TopView.swift */; };
 		09D1347D20D7702F00806CAA /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1347C20D7702F00806CAA /* TopView.xib */; };
+		09D1348120D7811800806CAA /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09D1348020D7811800806CAA /* GoogleService-Info-2.plist */; };
 		4E03ED43B68B950D5509C4C3 /* Pods_CoffeeOrderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,10 +47,10 @@
 		09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPageTableViewCell.xib; sourceTree = "<group>"; };
 		09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
-		09D1347420D7673100806CAA /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = SOURCE_ROOT; };
 		09D1347820D7696600806CAA /* CoffeeJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeeJSON.json; sourceTree = "<group>"; };
 		09D1347A20D7700600806CAA /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		09D1347C20D7702F00806CAA /* TopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
+		09D1348020D7811800806CAA /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrderSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E57587B1A31704D60A8BD8 /* Pods-CoffeeOrderSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.debug.xcconfig"; sourceTree = "<group>"; };
 		F838958DBB6BD89C56A17F17 /* Pods-CoffeeOrderSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,9 +94,9 @@
 				09D1345120D754A700806CAA /* Model */,
 				09D1345420D754C200806CAA /* Storyboard */,
 				09D1343F20D7523F00806CAA /* AppDelegate.swift */,
+				09D1348020D7811800806CAA /* GoogleService-Info-2.plist */,
 				09D1344620D7524300806CAA /* Assets.xcassets */,
 				09D1344820D7524300806CAA /* LaunchScreen.storyboard */,
-				09D1347420D7673100806CAA /* GoogleService-Info-2.plist */,
 				09D1344B20D7524300806CAA /* Info.plist */,
 			);
 			path = CoffeeOrderSystem;
@@ -286,9 +286,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D1348120D7811800806CAA /* GoogleService-Info-2.plist in Resources */,
 				09D1344A20D7524300806CAA /* LaunchScreen.storyboard in Resources */,
 				09D1344720D7524300806CAA /* Assets.xcassets in Resources */,
-				09D1347520D7673200806CAA /* GoogleService-Info-2.plist in Resources */,
 				09D1344520D7523F00806CAA /* Main.storyboard in Resources */,
 				09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */,
 				09D1346020D7559500806CAA /* OrderList.storyboard in Resources */,
