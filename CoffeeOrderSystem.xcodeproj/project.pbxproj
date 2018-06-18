@@ -11,6 +11,17 @@
 		09D1344520D7523F00806CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1344320D7523F00806CAA /* Main.storyboard */; };
 		09D1344720D7524300806CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D1344620D7524300806CAA /* Assets.xcassets */; };
 		09D1344A20D7524300806CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1344820D7524300806CAA /* LaunchScreen.storyboard */; };
+		09D1345620D754F900806CAA /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1345520D754F900806CAA /* MainPageViewController.swift */; };
+		09D1345B20D7554100806CAA /* OrderListPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1345A20D7554100806CAA /* OrderListPageViewController.swift */; };
+		09D1345E20D7555C00806CAA /* OrderDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1345D20D7555C00806CAA /* OrderDetailPageViewController.swift */; };
+		09D1346020D7559500806CAA /* OrderList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1345F20D7559500806CAA /* OrderList.storyboard */; };
+		09D1346220D755A100806CAA /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346120D755A100806CAA /* OrderDetail.storyboard */; };
+		09D1346420D759F800806CAA /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346320D759F800806CAA /* MainTableViewController.swift */; };
+		09D1346720D75A2800806CAA /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346620D75A2800806CAA /* MainTableView.swift */; };
+		09D1346A20D75AD700806CAA /* OrderPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346820D75AD700806CAA /* OrderPageTableViewCell.swift */; };
+		09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */; };
+		09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */; };
+		09D1347120D75B0F00806CAA /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +31,17 @@
 		09D1344620D7524300806CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D1344920D7524300806CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D1344B20D7524300806CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D1345520D754F900806CAA /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		09D1345A20D7554100806CAA /* OrderListPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListPageViewController.swift; sourceTree = "<group>"; };
+		09D1345D20D7555C00806CAA /* OrderDetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailPageViewController.swift; sourceTree = "<group>"; };
+		09D1345F20D7559500806CAA /* OrderList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderList.storyboard; sourceTree = "<group>"; };
+		09D1346120D755A100806CAA /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
+		09D1346320D759F800806CAA /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		09D1346620D75A2800806CAA /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		09D1346820D75AD700806CAA /* OrderPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPageTableViewCell.swift; sourceTree = "<group>"; };
+		09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPageTableViewCell.xib; sourceTree = "<group>"; };
+		09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
+		09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +74,104 @@
 		09D1343E20D7523F00806CAA /* CoffeeOrderSystem */ = {
 			isa = PBXGroup;
 			children = (
+				09D1345320D754B500806CAA /* Controller */,
+				09D1345220D754B000806CAA /* View */,
+				09D1345120D754A700806CAA /* Model */,
+				09D1345420D754C200806CAA /* Storyboard */,
 				09D1343F20D7523F00806CAA /* AppDelegate.swift */,
-				09D1344320D7523F00806CAA /* Main.storyboard */,
 				09D1344620D7524300806CAA /* Assets.xcassets */,
 				09D1344820D7524300806CAA /* LaunchScreen.storyboard */,
 				09D1344B20D7524300806CAA /* Info.plist */,
 			);
 			path = CoffeeOrderSystem;
+			sourceTree = "<group>";
+		};
+		09D1345120D754A700806CAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09D1345220D754B000806CAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09D1346520D759FE00806CAA /* MainPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09D1345320D754B500806CAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09D1345920D7552A00806CAA /* OrderDetailPage */,
+				09D1345820D7550F00806CAA /* OrderListPage */,
+				09D1345720D7550300806CAA /* MainPage */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09D1345420D754C200806CAA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				09D1344320D7523F00806CAA /* Main.storyboard */,
+				09D1345F20D7559500806CAA /* OrderList.storyboard */,
+				09D1346120D755A100806CAA /* OrderDetail.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		09D1345720D7550300806CAA /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				09D1345520D754F900806CAA /* MainPageViewController.swift */,
+				09D1346320D759F800806CAA /* MainTableViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		09D1345820D7550F00806CAA /* OrderListPage */ = {
+			isa = PBXGroup;
+			children = (
+				09D1345A20D7554100806CAA /* OrderListPageViewController.swift */,
+			);
+			path = OrderListPage;
+			sourceTree = "<group>";
+		};
+		09D1345920D7552A00806CAA /* OrderDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				09D1345D20D7555C00806CAA /* OrderDetailPageViewController.swift */,
+			);
+			path = OrderDetailPage;
+			sourceTree = "<group>";
+		};
+		09D1346520D759FE00806CAA /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				09D1346D20D75AF400806CAA /* OrderListCell */,
+				09D1346C20D75ADE00806CAA /* OrderPageCell */,
+				09D1346620D75A2800806CAA /* MainTableView.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		09D1346C20D75ADE00806CAA /* OrderPageCell */ = {
+			isa = PBXGroup;
+			children = (
+				09D1346820D75AD700806CAA /* OrderPageTableViewCell.swift */,
+				09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */,
+			);
+			path = OrderPageCell;
+			sourceTree = "<group>";
+		};
+		09D1346D20D75AF400806CAA /* OrderListCell */ = {
+			isa = PBXGroup;
+			children = (
+				09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */,
+				09D1346F20D75B0F00806CAA /* OrderListTableViewCell.xib */,
+			);
+			path = OrderListCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +235,10 @@
 				09D1344A20D7524300806CAA /* LaunchScreen.storyboard in Resources */,
 				09D1344720D7524300806CAA /* Assets.xcassets in Resources */,
 				09D1344520D7523F00806CAA /* Main.storyboard in Resources */,
+				09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */,
+				09D1346020D7559500806CAA /* OrderList.storyboard in Resources */,
+				09D1347120D75B0F00806CAA /* OrderListTableViewCell.xib in Resources */,
+				09D1346220D755A100806CAA /* OrderDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D1346A20D75AD700806CAA /* OrderPageTableViewCell.swift in Sources */,
+				09D1346720D75A2800806CAA /* MainTableView.swift in Sources */,
+				09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */,
+				09D1345620D754F900806CAA /* MainPageViewController.swift in Sources */,
+				09D1345E20D7555C00806CAA /* OrderDetailPageViewController.swift in Sources */,
+				09D1345B20D7554100806CAA /* OrderListPageViewController.swift in Sources */,
+				09D1346420D759F800806CAA /* MainTableViewController.swift in Sources */,
 				09D1344020D7523F00806CAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
