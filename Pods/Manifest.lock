@@ -28,10 +28,14 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SDWebImage (4.4.0):
+    - SDWebImage/Core (= 4.4.0)
+  - SDWebImage/Core (4.4.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -43,6 +47,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - leveldb-library
     - nanopb
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Firebase: e08fb0795f35707aeb1d8a715c731c45bdf6fd56
@@ -53,7 +58,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SDWebImage: b534502786e43dde36dfcaee89356fe6df30e203
 
-PODFILE CHECKSUM: 202f96a79412f319cb874dab74711799022eb34a
+PODFILE CHECKSUM: 815418a7cba3c3fcf3fcc50b4dc695f51a4c5b27
 
 COCOAPODS: 1.5.0

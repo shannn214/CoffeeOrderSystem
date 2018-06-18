@@ -16,16 +16,12 @@ class OrderListTableViewController: UIViewController {
     
     var listManager = LoadList()
     
-    var item = LoadItems()
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupDelegate()
         
         setupTableView()
-        
-        item.loadItemData()
 
     }
 

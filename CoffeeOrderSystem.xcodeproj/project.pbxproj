@@ -17,7 +17,6 @@
 		09D1346020D7559500806CAA /* OrderList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1345F20D7559500806CAA /* OrderList.storyboard */; };
 		09D1346220D755A100806CAA /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346120D755A100806CAA /* OrderDetail.storyboard */; };
 		09D1346420D759F800806CAA /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346320D759F800806CAA /* MainTableViewController.swift */; };
-		09D1346720D75A2800806CAA /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346620D75A2800806CAA /* MainTableView.swift */; };
 		09D1346A20D75AD700806CAA /* OrderPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346820D75AD700806CAA /* OrderPageTableViewCell.swift */; };
 		09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */; };
 		09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */; };
@@ -48,7 +47,6 @@
 		09D1345F20D7559500806CAA /* OrderList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderList.storyboard; sourceTree = "<group>"; };
 		09D1346120D755A100806CAA /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		09D1346320D759F800806CAA /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		09D1346620D75A2800806CAA /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		09D1346820D75AD700806CAA /* OrderPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPageTableViewCell.swift; sourceTree = "<group>"; };
 		09D1346920D75AD700806CAA /* OrderPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPageTableViewCell.xib; sourceTree = "<group>"; };
 		09D1346E20D75B0F00806CAA /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 			children = (
 				09D1347E20D7703E00806CAA /* TopView */,
 				09D1346C20D75ADE00806CAA /* OrderPageCell */,
-				09D1346620D75A2800806CAA /* MainTableView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -363,12 +360,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -385,7 +384,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D1346A20D75AD700806CAA /* OrderPageTableViewCell.swift in Sources */,
-				09D1346720D75A2800806CAA /* MainTableView.swift in Sources */,
 				09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */,
 				09D1348B20D78A9800806CAA /* COSStoryboard.swift in Sources */,
 				09D1349120D7B2A400806CAA /* Item.swift in Sources */,
