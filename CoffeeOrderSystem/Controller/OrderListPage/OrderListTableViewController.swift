@@ -13,9 +13,13 @@ class OrderListTableViewController: UIViewController {
     @IBOutlet weak var listTableView: UITableView!
     
     var listData = [List]()
+    
+    var listManager = LoadList()
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupDelegate()
         
         setupTableView()
 
@@ -32,6 +36,13 @@ class OrderListTableViewController: UIViewController {
         listTableView.delegate = self
         listTableView.dataSource = self
         listTableView.rowHeight = 180
+        
+    }
+    
+    func setupDelegate() {
+        
+        listManager.delegate = self
+        listManager.loadData()
         
     }
     
@@ -65,7 +76,16 @@ extension OrderListTableViewController: UITableViewDelegate, UITableViewDataSour
         return listCell
     }
     
+}
+
+extension OrderListTableViewController: ListManagerDelegate {
     
-    
-    
+    func manager(_ manager: LoadList, lists: [List]) {
+        
+        self.listData += lists
+        
+        listTableView.reloadData()
+        
+    }
+
 }

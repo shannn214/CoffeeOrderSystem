@@ -10,6 +10,10 @@ import Foundation
 import FirebaseDatabase
 import Firebase
 
+protocol ListManagerDelegate: class {
+    func manager(_ manager: LoadList, lists: [List])
+}
+
 struct List {
     
     let number: String
@@ -26,13 +30,15 @@ struct List {
 
 struct LoadList {
     
+    weak var delegate: ListManagerDelegate?
+    
     func loadData() {
         
         let ref = Database.database().reference()
         
         let data = ref.child("orders").queryOrdered(byChild: "account").queryEqual(toValue: "wayne.chen@awscafe.tw")
         
-        var listData: List!
+        var listData = [List]()
         
         data.observe(.value) { (snapshot: DataSnapshot) in
             
@@ -47,8 +53,16 @@ struct LoadList {
                     let price = data.value["price"] as? Int
                     else { return }
                 
-                listData = List(number: number, account: account, time: time, itemCount: itemCount, price: price)
-                                
+                let getListData = List(number: number, account: account, time: time, itemCount: itemCount, price: price)
+                
+                listData.append(getListData)
+                
+            }
+            
+            DispatchQueue.main.async {
+                
+                self.delegate?.manager(self, lists: listData)
+                
             }
             
             
