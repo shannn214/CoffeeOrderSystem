@@ -31,6 +31,7 @@
 		09D1348B20D78A9800806CAA /* COSStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1348A20D78A9800806CAA /* COSStoryboard.swift */; };
 		09D1348D20D791F800806CAA /* OrderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1348C20D791F800806CAA /* OrderListTableViewController.swift */; };
 		09D1348F20D79DB500806CAA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1348E20D79DB500806CAA /* List.swift */; };
+		09D1349120D7B2A400806CAA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1349020D7B2A400806CAA /* Item.swift */; };
 		4E03ED43B68B950D5509C4C3 /* Pods_CoffeeOrderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		09D1348A20D78A9800806CAA /* COSStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSStoryboard.swift; sourceTree = "<group>"; };
 		09D1348C20D791F800806CAA /* OrderListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewController.swift; sourceTree = "<group>"; };
 		09D1348E20D79DB500806CAA /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		09D1349020D7B2A400806CAA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrderSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E57587B1A31704D60A8BD8 /* Pods-CoffeeOrderSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.debug.xcconfig"; sourceTree = "<group>"; };
 		F838958DBB6BD89C56A17F17 /* Pods-CoffeeOrderSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				09D1347820D7696600806CAA /* CoffeeJSON.json */,
 				09D1348E20D79DB500806CAA /* List.swift */,
+				09D1349020D7B2A400806CAA /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				09D1346720D75A2800806CAA /* MainTableView.swift in Sources */,
 				09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */,
 				09D1348B20D78A9800806CAA /* COSStoryboard.swift in Sources */,
+				09D1349120D7B2A400806CAA /* Item.swift in Sources */,
 				09D1348F20D79DB500806CAA /* List.swift in Sources */,
 				09D1348D20D791F800806CAA /* OrderListTableViewController.swift in Sources */,
 				09D1345620D754F900806CAA /* MainPageViewController.swift in Sources */,
@@ -541,7 +545,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ARXY2PA7PZ;
 				INFOPLIST_FILE = CoffeeOrderSystem/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shannn.CoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -557,7 +564,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ARXY2PA7PZ;
 				INFOPLIST_FILE = CoffeeOrderSystem/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shannn.CoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

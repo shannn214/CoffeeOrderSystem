@@ -42,7 +42,7 @@ struct LoadList {
         
         data.observe(.value) { (snapshot: DataSnapshot) in
             
-            for snap in snapshot.children{
+            for snap in snapshot.children {
                 
                 guard let data = (key: (snap as! DataSnapshot).key, value: (snap as! DataSnapshot).value) as? (key: String, value: AnyObject) else { return }
                 
@@ -64,16 +64,6 @@ struct LoadList {
                 self.delegate?.manager(self, lists: listData)
                 
             }
-            
-            
-            
-//            for snap in snapshot.children {
-//
-//                print(snapshot)
-//                print(snapshot.value)
-//                print(snap)
-//
-//            }
             
         }
         

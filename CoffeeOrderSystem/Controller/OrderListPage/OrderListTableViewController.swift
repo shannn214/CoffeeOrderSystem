@@ -15,6 +15,8 @@ class OrderListTableViewController: UIViewController {
     var listData = [List]()
     
     var listManager = LoadList()
+    
+    var item = LoadItems()
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,8 @@ class OrderListTableViewController: UIViewController {
         setupDelegate()
         
         setupTableView()
+        
+        item.loadItemData()
 
     }
 
