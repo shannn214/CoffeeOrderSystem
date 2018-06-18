@@ -12,14 +12,11 @@ class MainTableViewController: UIViewController {
 
     @IBOutlet weak var mainTableView: UITableView!
     
-    var loadList = LoadList()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupTableView()
         
-        loadList.loadData()
     }
 
     override func didReceiveMemoryWarning() {
