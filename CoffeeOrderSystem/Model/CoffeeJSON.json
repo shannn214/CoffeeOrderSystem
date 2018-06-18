@@ -1,0 +1,65 @@
+
+{
+    "items" : [ {
+               "name" : "Espresso",
+               "price" : 40,
+               "image" : "https://i.imgur.com/EB3miDu.png"
+               }, {
+               "name" : "Americano",
+               "price" : 30,
+               "image" : "https://i.imgur.com/yqixI6k.jpg"
+               }, {
+               "name" : "Latte",
+               "price" : 40,
+               "image" : "https://i.imgur.com/KzYvIBV.jpg"
+               }, {
+               "name" : "Mocha",
+               "price" : 40,
+               "image" : "https://i.imgur.com/s9cW7U0.jpg"
+               }, {
+               "name" : "Single Origin",
+               "price" : 50,
+               "image" : "https://i.imgur.com/ENKT4iM.jpg"
+               }, {
+               "name" : "Black Tea",
+               "price" : 40,
+               "image" : "https://i.imgur.com/hltHqWj.jpg"
+               }, {
+               "name" : "Green Tea",
+               "price" : 40,
+               "image" : "https://i.imgur.com/V8z8DJc.jpg"
+               } ],
+    "orders" : {
+        "1070612001" : {
+            "account" : "wayne.chen@awscafe.tw",
+            "content" : {
+                "Latte" : [ {
+                           "cups" : 1,
+                           "iced" : true,
+                           "sugar" : true
+                           }, {
+                           "cups" : 1,
+                           "iced" : true,
+                           "sugar" : false
+                           }, {
+                           "cups" : 5,
+                           "iced" : false,
+                           "sugar" : false
+                           } ],
+                "Mocha" : [ {
+                           "cups" : 1,
+                           "iced" : false,
+                           "sugar" : false
+                           }, {
+                           "cups" : 4,
+                           "iced" : true,
+                           "sugar" : false
+                           } ]
+            },
+            "status" : 0,
+            "time" : 12312331321,
+            "itemCount": 12,
+            "price": 500
+        }
+    }
+}
