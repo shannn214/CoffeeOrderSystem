@@ -35,13 +35,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PC5-4m-jI4" customClass="TopView" customModule="CoffeeOrderSystem" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="195"/>
-                                <color key="backgroundColor" white="0.89474826388888884" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="195" id="T8c-EY-lOh"/>
-                                </constraints>
-                            </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imw-dc-eGt">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
@@ -52,6 +45,15 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="kCj-A2-Dhz"/>
                                 </items>
                             </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1B-Kn-ZiV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="f0T-MH-eBf"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="UU3-xg-eHL" kind="embed" id="F3j-BW-mKL"/>
+                                </connections>
+                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucY-K8-3Gj">
                                 <rect key="frame" x="0.0" y="259" width="375" height="364"/>
                                 <connections>
@@ -61,25 +63,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="U1B-Kn-ZiV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0kr-gQ-4lw"/>
                             <constraint firstItem="imw-dc-eGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2te-eb-Fa3"/>
-                            <constraint firstItem="PC5-4m-jI4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6nb-kG-uAC"/>
                             <constraint firstItem="imw-dc-eGt" firstAttribute="top" secondItem="ucY-K8-3Gj" secondAttribute="bottom" id="A5A-Yw-56T"/>
+                            <constraint firstItem="ucY-K8-3Gj" firstAttribute="top" secondItem="U1B-Kn-ZiV" secondAttribute="bottom" id="Be6-sY-ohF"/>
+                            <constraint firstItem="U1B-Kn-ZiV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bvv-9n-ivW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ucY-K8-3Gj" secondAttribute="trailing" id="Fjd-Tw-2WN"/>
                             <constraint firstItem="imw-dc-eGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Umf-RJ-M48"/>
                             <constraint firstItem="imw-dc-eGt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XJK-QM-ZpI"/>
-                            <constraint firstItem="ucY-K8-3Gj" firstAttribute="top" secondItem="PC5-4m-jI4" secondAttribute="bottom" id="Yie-Qb-6Xo"/>
-                            <constraint firstItem="PC5-4m-jI4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfZ-R5-oQH"/>
-                            <constraint firstItem="PC5-4m-jI4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hKN-VT-DZD"/>
+                            <constraint firstItem="U1B-Kn-ZiV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gQV-7x-4Fa"/>
                             <constraint firstItem="ucY-K8-3Gj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tQb-UU-kqy"/>
-                            <constraint firstItem="PC5-4m-jI4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uKe-4W-7ub"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U1B-Kn-ZiV" secondAttribute="trailing" id="uLB-6n-EYo"/>
                             <constraint firstItem="imw-dc-eGt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zBX-6i-ztv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZfJ-Iv-Pzl"/>
-                    <connections>
-                        <outlet property="topView" destination="PC5-4m-jI4" id="Z17-en-RKO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,6 +113,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oP3-j6-lIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.60000000000002" y="253.2233883058471"/>
+        </scene>
+        <!--Main Top View Controller-->
+        <scene sceneID="Q9V-SG-hzx">
+            <objects>
+                <viewController id="UU3-xg-eHL" customClass="MainTopViewController" customModule="CoffeeOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VmZ-fp-4Yb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UTP-Wr-GpV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TcS-Hx-lGk">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UTP-Wr-GpV" firstAttribute="leading" secondItem="VmZ-fp-4Yb" secondAttribute="leading" id="2wm-JV-cHk"/>
+                            <constraint firstAttribute="bottom" secondItem="UTP-Wr-GpV" secondAttribute="bottom" id="cqq-e4-InD"/>
+                            <constraint firstAttribute="trailing" secondItem="UTP-Wr-GpV" secondAttribute="trailing" id="j0N-Sv-m6d"/>
+                            <constraint firstItem="UTP-Wr-GpV" firstAttribute="top" secondItem="VmZ-fp-4Yb" secondAttribute="top" id="u4I-li-FhF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topCollectionView" destination="UTP-Wr-GpV" id="oUN-sG-Ho0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQU-Pt-seG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="-79.610194902548727"/>
         </scene>
     </scenes>
 </document>
