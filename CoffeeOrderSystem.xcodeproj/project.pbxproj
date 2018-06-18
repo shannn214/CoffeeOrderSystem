@@ -31,6 +31,9 @@
 		09D1348D20D791F800806CAA /* OrderListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1348C20D791F800806CAA /* OrderListTableViewController.swift */; };
 		09D1348F20D79DB500806CAA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1348E20D79DB500806CAA /* List.swift */; };
 		09D1349120D7B2A400806CAA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1349020D7B2A400806CAA /* Item.swift */; };
+		09D1349320D7D09000806CAA /* MainTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1349220D7D09000806CAA /* MainTopViewController.swift */; };
+		09D1349620D7D18600806CAA /* MainTopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1349420D7D18600806CAA /* MainTopCollectionViewCell.swift */; };
+		09D1349720D7D18600806CAA /* MainTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D1349520D7D18600806CAA /* MainTopCollectionViewCell.xib */; };
 		4E03ED43B68B950D5509C4C3 /* Pods_CoffeeOrderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		09D1348C20D791F800806CAA /* OrderListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewController.swift; sourceTree = "<group>"; };
 		09D1348E20D79DB500806CAA /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		09D1349020D7B2A400806CAA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		09D1349220D7D09000806CAA /* MainTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopViewController.swift; sourceTree = "<group>"; };
+		09D1349420D7D18600806CAA /* MainTopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopCollectionViewCell.swift; sourceTree = "<group>"; };
+		09D1349520D7D18600806CAA /* MainTopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTopCollectionViewCell.xib; sourceTree = "<group>"; };
 		AD0C551B74F9568AF822BD1E /* Pods_CoffeeOrderSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrderSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E57587B1A31704D60A8BD8 /* Pods-CoffeeOrderSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.debug.xcconfig"; sourceTree = "<group>"; };
 		F838958DBB6BD89C56A17F17 /* Pods-CoffeeOrderSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeOrderSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeOrderSystem/Pods-CoffeeOrderSystem.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 			children = (
 				09D1345520D754F900806CAA /* MainPageViewController.swift */,
 				09D1346320D759F800806CAA /* MainTableViewController.swift */,
+				09D1349220D7D09000806CAA /* MainTopViewController.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -212,6 +219,8 @@
 			children = (
 				09D1347A20D7700600806CAA /* TopView.swift */,
 				09D1347C20D7702F00806CAA /* TopView.xib */,
+				09D1349420D7D18600806CAA /* MainTopCollectionViewCell.swift */,
+				09D1349520D7D18600806CAA /* MainTopCollectionViewCell.xib */,
 			);
 			path = TopView;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 				09D1344A20D7524300806CAA /* LaunchScreen.storyboard in Resources */,
 				09D1344720D7524300806CAA /* Assets.xcassets in Resources */,
 				09D1344520D7523F00806CAA /* Main.storyboard in Resources */,
+				09D1349720D7D18600806CAA /* MainTopCollectionViewCell.xib in Resources */,
 				09D1346B20D75AD700806CAA /* OrderPageTableViewCell.xib in Resources */,
 				09D1346020D7559500806CAA /* OrderList.storyboard in Resources */,
 				09D1347D20D7702F00806CAA /* TopView.xib in Resources */,
@@ -386,7 +396,9 @@
 				09D1346A20D75AD700806CAA /* OrderPageTableViewCell.swift in Sources */,
 				09D1347020D75B0F00806CAA /* OrderListTableViewCell.swift in Sources */,
 				09D1348B20D78A9800806CAA /* COSStoryboard.swift in Sources */,
+				09D1349320D7D09000806CAA /* MainTopViewController.swift in Sources */,
 				09D1349120D7B2A400806CAA /* Item.swift in Sources */,
+				09D1349620D7D18600806CAA /* MainTopCollectionViewCell.swift in Sources */,
 				09D1348F20D79DB500806CAA /* List.swift in Sources */,
 				09D1348D20D791F800806CAA /* OrderListTableViewController.swift in Sources */,
 				09D1345620D754F900806CAA /* MainPageViewController.swift in Sources */,
